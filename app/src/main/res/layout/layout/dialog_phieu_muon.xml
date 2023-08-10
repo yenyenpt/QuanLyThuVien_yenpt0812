@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/edMaPM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mã phiếu mượn"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+    <Spinner
+        android:id="@+id/spMaTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="5dp"/>
+    <Spinner
+        android:id="@+id/spMaSach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="5dp"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/input_ngay_thue_pm"
+        app:endIconMode="custom"
+        app:endIconDrawable = "@drawable/calendar"
+        app:errorEnabled="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edNgay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ngày "
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/tvTienThue"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tiền thuê"/>
+
+    <CheckBox
+        android:id="@+id/chkTraSach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đã trả sách"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp">
+        <Button
+            android:id="@+id/btnLuuPM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lưu"
+            android:layout_marginHorizontal="20dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FF630B"/>
+        <Button
+            android:id="@+id/btnHuyPM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hủy"
+            android:layout_marginHorizontal="20dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FF630B"/>
+    </LinearLayout>
+</LinearLayout>
